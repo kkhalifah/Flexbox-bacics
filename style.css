@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* 
+green: #67b26f;
+blue: #4ca2cd;
+mid: #5aaa9d;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    color: #444;
+    font-family: Roboto;
+    padding: 50px;
+    background-image: linear-gradient(-90deg, #67b26f, #4ca2cd);
+    height: 100vh;
+   /* vertical height*/
+    display: flex;
+    align-items: center; /*cross axis*/
+    justify-content: center; /*main axis*/
+}
+
+.pizza {
+    /*flex=side by side elemets*/
+    display: flex;
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,0.2);
+}
+/*child elements of pizza*/
+.pizza__hero {
+    flex: 0 1 45%;
+}
+.pizza__img {
+    width: 100%;
+    display: block;
+}
+.pizza__content {
+    background: white;
+    flex: 1;
+}
+.pizza__price {
+    background-image: linear-gradient(-45deg, #67b26f, #4ca2cd);
+    flex: 0 1 50px;
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    /*center text xy*/
+    align-items: center;
+    justify-content: center;
+}
